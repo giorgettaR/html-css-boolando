@@ -11,60 +11,19 @@
     flex-direction: row;
 }
 
-section >.container {
+section.container {
     width: 80vw;
     height: fit-content;
     padding: 2vh;
 }
 
 .container.horizontal >.row {
-    height: 100%;
+    height: fit-content;
     width: 100%;
     display: flex;
     flex-direction: row;
 }
 
-/* STYLE LABELS */
-
-    div.heart {
-        background-color: white;
-        position: absolute;
-        top: 2%;
-        right: 0;
-    }
-
-    div.labels {
-        position: absolute;
-        bottom: 8%;
-    }
-
-    .label {
-        text-align: center;
-        font-size: 18px;
-        padding: 5px 8px;
-    }
-
-    .heart {
-        padding: 15px 15px;
-    }
-
-    .sustainability {
-        background-color: green;
-        color: white;
-    }
-
-    .discount {
-        background-color: red;
-        color: white;
-    }
-
-    .fa {
-        padding: 3px;
-        font-size: 30px;
-        text-align: center;
-        text-decoration: none;
-        color: white;
-      }
 
 
 /* STYLE HEADER */
@@ -148,19 +107,50 @@ section >.container {
         text-decoration: line-through;
     }
 
+    /* STYLE LABELS */
 
+        div.heart {
+            background-color: white;
+            position: absolute;
+            top: 2%;
+            right: 0;
+        }
 
+        div.labels {
+            position: absolute;
+            bottom: 8%;
+        }
 
-/* HOVER */
+        .label {
+            text-align: center;
+            font-size: 18px;
+            padding: 5px 8px;
+            color: white;
+        }
 
-    .card.container:hover img.first{
-        opacity: 0;
-        transition: 0.5s;
-    }
+        .heart {
+            padding: 15px 15px;
+            color: black;
+        }
 
-    img.first {
-        position: absolute;
-    }
+        .sustainability {
+            background-color: green;
+        }
+
+        .discount {
+            background-color: red;
+        }
+
+    /* HOVER */
+
+        .card.container:hover img.first{
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        img.first {
+            position: absolute;
+        }
 
 /* STYLE FOOTER */
 
@@ -194,7 +184,14 @@ section >.container {
         text-align: end;
         width: 15%;
     }
-
+    
+    .fa {
+        padding: 3px;
+        font-size: 30px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
 
 /* DEBUG */
 
