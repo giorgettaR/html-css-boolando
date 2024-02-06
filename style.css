@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+section >.container {
+    width: 80vw;
+    height: fit-content;
+    padding: 2vh;
+}
+
+.container.horizontal >.row{
+    height: fit-content;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+}
+
+.column.card {
+    width: calc(100%/3);
+    flex-direction: column;
+    padding: 2px;
+}
+
+.column.card img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+
+
+/* DEBUG */
+
+.debug .container {
+    border: dashed black 1px;
+}
+
+.debug .container .column *{
+    border: dashed black 1px;
+}
