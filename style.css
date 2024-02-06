@@ -28,7 +28,7 @@ section >.container {
 .column.card {
     width: calc(100%/3);
     flex-direction: column;
-    padding: 2px;
+    padding: 5px;
 }
 
 .column.card img {
@@ -87,6 +87,19 @@ section >.container {
         background-color: red;
         color: white;
     }
+
+
+/* HOVER */
+
+.card.container:hover img.first{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+img.first {
+    position: absolute;
+}
+
 
 /* DEBUG */
 
