@@ -1,30 +1,40 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* RESET */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-.container {
-    max-width: 80vw;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-}
+/* GENERAL SETTINGS */
 
-section.container {
-    width: 80vw;
-    height: fit-content;
-    padding: 2vh;
-}
+    .container {
+        max-width: 80vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+    }
 
-.container.horizontal >.row {
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
+    section >.container {
+        width: 80vw;
+        height: fit-content;
+        padding: 2vh;
+    }
 
+    .container >.row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
 
+    .container.horizontal >.row {
+        height: fit-content;
+    }
+
+    .container.vertical >.row {
+        width: fit-content;
+        height: 100%;
+        flex-direction: column;
+    }
 
 /* STYLE HEADER */
 
@@ -43,7 +53,7 @@ section.container {
         justify-content: space-around;
     }
 
-    .col.logo {
+    .col-logo {
         display: block;
         margin: auto;
         width: 40%;
@@ -54,22 +64,22 @@ section.container {
         background-repeat: no-repeat;
     }
 
-    .col.categories *,
-    .col.nav * {
+    .col-categories *,
+    .col-nav * {
         padding: 5px;
     }
 
-    .col.categories,
-    .col.nav {
+    .col-categories,
+    .col-nav {
         align-items: center;
         width: 30%;
     }
 
-    .col.categories {
+    .col-categories {
         justify-content: left;
     }
 
-    .col.nav {
+    .col-nav {
         justify-content: end;
     }
 
@@ -80,20 +90,29 @@ section.container {
         flex-wrap: wrap;
     }
 
-    .column.card {
+    .col-card {
         width: calc(100%/3);
         flex-direction: column;
+        justify-content: start;
         padding: 5px;
     }
 
-    .column.card img {
+    .col-card >.row {
+        align-items: start;
+    }
+
+    .col-card img {
         width: 100%;
         display: block;
         margin: auto;
     }
 
-    .column.card div.img {
+    .col-card .col-img {
         position: relative;
+    }
+
+    img.first {
+        position: absolute;
     }
 
     .price {
@@ -143,13 +162,9 @@ section.container {
 
     /* HOVER */
 
-        .card.container:hover img.first{
+        .col-card.container:hover img.first{
             opacity: 0;
             transition: 0.5s;
-        }
-
-        img.first {
-            position: absolute;
         }
 
 /* STYLE FOOTER */
