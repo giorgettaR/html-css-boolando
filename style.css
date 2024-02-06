@@ -37,7 +37,56 @@ section >.container {
     margin: auto;
 }
 
+.column.card div.img {
+    position: relative;
+}
 
+.price {
+    color: red;
+    font-weight: bold;
+}
+
+.price .old {
+    color: black;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+
+
+
+/* STYLE LABELS */
+
+    div.heart {
+        background-color: white;
+        position: absolute;
+        top: 2%;
+        right: 0;
+    }
+
+    div.labels {
+        position: absolute;
+        bottom: 8%;
+    }
+
+    .label {
+        text-align: center;
+        font-size: 18px;
+        padding: 5px 8px;
+    }
+
+    .heart {
+        padding: 15px 15px;
+    }
+
+    .sustainability {
+        background-color: green;
+        color: white;
+    }
+
+    .discount {
+        background-color: red;
+        color: white;
+    }
 
 /* DEBUG */
 
